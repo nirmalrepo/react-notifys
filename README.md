@@ -1,6 +1,13 @@
 # react-notifys
-Notifys is a React component which provides notifications with many configuration possibilities. 
+> Notifys is a React component which provides notifications with many configuration possibilities.
 
+[![Coveralls branch](https://img.shields.io/coveralls/schiehll/react-alert/master.svg?style=flat-square)](https://coveralls.io/github/schiehll/react-alert?branch=master)
+[![version](https://img.shields.io/npm/v/react-alert.svg?style=flat-square)](http://npm.im/react-alert)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
+
+## Demo
+
+You can see a live demo [here](https://mighty-brook-48505.herokuapp.com).
 
 ## Installation
 
