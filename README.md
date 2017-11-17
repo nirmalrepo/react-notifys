@@ -31,7 +31,7 @@ export default MyComponent;
 Alerts are created with the notifys class, followed by one of the four contextual classes notifys-success, notifys-info, notifys-warning or notifys-danger
 
 ## Basic example
-![Alt text](/demo.png?raw=true "Optional Title")
+![Alt text](https://github.com/nirmalrepo/react-notifys/demo.png?raw=true "Optional Title")
 
 ## License
 The files included in this repository are licensed under the MIT license.
