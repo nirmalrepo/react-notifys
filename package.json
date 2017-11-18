@@ -1,6 +1,6 @@
 {
   "name": "react-notifys",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Notifys is a React component which provides notifications with many configuration possibilities",
   "main": "build/index.js",
   "peerDependencies": {
