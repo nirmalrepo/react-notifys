@@ -1,6 +1,6 @@
 {
   "name": "react-notifys",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Notifys is a React component which provides notifications with many configuration possibilities",
   "main": "build/index.js",
   "peerDependencies": {
@@ -19,6 +19,7 @@
     "name": "Nirmal Fernando",
     "email": "w.v.nirmalfernando@gmail.com"
   },
+  "repository": "https://github.com/nirmalrepo/react-notifys.git",
   "keywords": [
     "React Notify",
     "Notifications",
