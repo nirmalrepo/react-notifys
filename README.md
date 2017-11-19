@@ -42,7 +42,7 @@ You can pass below props with the default React Notifys.
 
 
 ## Basic example
-![Alt text](https://i.imgur.com/YEGlngF.png "Optional title")
+![Alt text](https://i.imgur.com/wwaBpyQ.png "Optional title")
 
 
 ## License
