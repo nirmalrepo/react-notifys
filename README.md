@@ -47,4 +47,5 @@ You can pass below props with the default React Notifys.
 
 ## License
 Copyright (c) 2017 Nirmal Fernando
+
 The files included in this repository are licensed under the MIT license.
