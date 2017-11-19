@@ -137,15 +137,18 @@ var Notifys = function (_React$Component) {
     _this.state = {
       showNotification: true
     };
-    _this.closeNotify = _this.closeNotify.bind(_this);
+    _this._closeNotify = _this._closeNotify.bind(_this);
     return _this;
   }
 
   _createClass(Notifys, [{
-    key: 'closeNotify',
-    value: function closeNotify(e) {
+    key: '_closeNotify',
+    value: function _closeNotify(e) {
       e.preventDefault;
       this.setState({ showNotification: false });
+      if (this.props.onClose) {
+        this.props.onClose(e);
+      }
     }
   }, {
     key: 'render',
@@ -163,7 +166,7 @@ var Notifys = function (_React$Component) {
           { className: className },
           _react2.default.createElement(
             'a',
-            { href: '#', className: 'close', title: 'close', onClick: this.closeNotify },
+            { className: 'close', title: 'close', onClick: this._closeNotify },
             '\xD7'
           ),
           _react2.default.Children.map(children, function (element) {
@@ -188,7 +191,7 @@ exports = module.exports = __webpack_require__(4)();
 
 
 // module
-exports.push([module.i, ".notifys{\n    margin-top: 18px;\n    padding-right: 35px;\n    padding: 15px;\n    margin-bottom: 20px;\n    border: 1px solid transparent;\n    border-radius: 4px;\n    font-family: Verdana,sans-serif;\n    font-size: 15px;\n    line-height: 1.5;\n\n}\n\n.notifys-success{\n    color: #3c763d;\n    background-color: #dff0d8;\n    border-color: #d6e9c6;\n}\n\n.notifys-info {\n    color: #31708f;\n    background-color: #d9edf7;\n    border-color: #bce8f1;\n}\n\n.notifys-warning {\n    color: #8a6d3b;\n    background-color: #fcf8e3;\n    border-color: #faebcc;\n}\n\n.notifys-danger {\n    color: #a94442;\n    background-color: #f2dede;\n    border-color: #ebccd1;\n}\n\n.notifys a.close{\n    color: inherit;\n    text-decoration: none !important;\n    font-size: 18px !important;\n    line-height: 1.2;\n    float: right;\n    text-shadow: 0 1px 0 #fff;\n    opacity: .2;\n}\n\n.notify-div.fadeOut{\n    opacity: 0;\n}\n\n.notify-div {\n    -webkit-transition: opacity .15s linear;\n    -moz-transition: opacity .15s linear;\n    -ms-transition: opacity .15s linear;\n    -o-transition: opacity .15s linear;\n    opacity: 1;\n}", ""]);
+exports.push([module.i, ".notifys{\n    margin-top: 18px;\n    padding-right: 35px;\n    padding: 15px;\n    margin-bottom: 20px;\n    border: 1px solid transparent;\n    border-radius: 4px;\n    font-family: Verdana,sans-serif;\n    font-size: 15px;\n    line-height: 1.5;\n\n}\n\n.notifys-success{\n    color: #3c763d;\n    background-color: #dff0d8;\n    border-color: #d6e9c6;\n}\n\n.notifys-info {\n    color: #31708f;\n    background-color: #d9edf7;\n    border-color: #bce8f1;\n}\n\n.notifys-warning {\n    color: #8a6d3b;\n    background-color: #fcf8e3;\n    border-color: #faebcc;\n}\n\n.notifys-danger {\n    color: #a94442;\n    background-color: #f2dede;\n    border-color: #ebccd1;\n}\n\n.notifys a.close{\n    color: inherit;\n    text-decoration: none !important;\n    font-size: 18px !important;\n    line-height: 1.2;\n    float: right;\n    text-shadow: 0 1px 0 #fff;\n    opacity: .2;\n    cursor: pointer;\n}\n\n.notify-div.fadeOut{\n    opacity: 0;\n}\n\n.notify-div {\n    -webkit-transition: opacity .15s linear;\n    -moz-transition: opacity .15s linear;\n    -ms-transition: opacity .15s linear;\n    -o-transition: opacity .15s linear;\n    opacity: 1;\n}", ""]);
 
 // exports
 

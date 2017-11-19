@@ -5,11 +5,14 @@
 [![version](https://img.shields.io/npm/v/react-alert.svg?style=flat-square)](http://npm.im/react-alert)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
 
+
 ## Demo
 
 You can see a live demo [here](https://mighty-brook-48505.herokuapp.com).
 
+
 ## Installation
+
 
 To install this Component, run `yarn add react-notifys` or `npm install react-notifys`.
 
@@ -26,12 +29,22 @@ const MyComponent = (props) => <Notifys className="notifys notifys-success fade"
 
 export default MyComponent;
 
-
 ```
-Alerts are created with the notifys class, followed by one of the four contextual classes notifys-success, notifys-info, notifys-warning or notifys-danger
+
+
+### Props
+You can pass below props with the default React Notifys.
+
+|Name|Type|Default|Description|
+|----|----|-------|-----------|
+| **className** | <code>String</code> |  | Alerts are created with the notifys class, followed by one of the four contextual classes notifys-success, notifys-info, notifys-warning or notifys-danger. |
+| **onClose** | <code>Function</code> |  | *optional*. Create a callback function when a notifys is closed. |
+
 
 ## Basic example
-![Alt text](https://i.imgur.com/ZWIKTNI.png "Optional title")
+![Alt text](https://imgur.com/a/gfa54 "Optional title")
+
 
 ## License
+Copyright (c) 2017 Nirmal Fernando
 The files included in this repository are licensed under the MIT license.
