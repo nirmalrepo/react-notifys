@@ -48,12 +48,33 @@
 
 .notify-div.fadeOut{
     opacity: 0;
+    visibility: hidden;
+
 }
 
-.notify-div {
-    -webkit-transition: opacity .15s linear;
-    -moz-transition: opacity .15s linear;
-    -ms-transition: opacity .15s linear;
-    -o-transition: opacity .15s linear;
+.notify-div.fadeOut .notifys {
+    padding:0;
+    margin:0;
+    height: 0px;
+    overflow: hidden;
+}
+
+.notify-div.fadeIn {
+    height:30px;
+
     opacity: 1;
+    visibility: visible;
+}
+.notify-div {
+    width: 100%;
+    display: inline;
+    margin-bottom:15px;
+}
+
+.notify-div * {
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -ms-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+
 }
